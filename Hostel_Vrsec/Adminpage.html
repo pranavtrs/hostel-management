@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration Page</title>
+    <link id="css-link" rel="stylesheet" href="css/Adminpage.css">
+</head>
+<body>
+    <div class="headerlm"></div>
+    <header class="a">
+        <h1>Administration Panel</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#" id="personal-details-link">Personal Details</a></li>
+            <li><a href="#" id="student-details-link">Student Details</a></li>
+            <li><a href="#" id="attendance-link">Attendance</a></li>
+            <li><a href="#" id="add-news-link">Add News and Notices</a></li>
+            <li><a href="#" id="upload-mess-bill-link">Mess Bill Uploading</a></li>
+            <li><a href="#" id="performance-appraisal-link">Manage Performance Appraisal</a></li>
+        </ul>
+    </nav>
+    
+    <main id="content">
+        <!-- Initial content goes here -->
+    </main>
+
+    <script>
+        document.getElementById("personal-details-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            loadContent("personal-details.html", "personal-details.css");
+        });
+
+        document.getElementById("student-details-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            loadContent("studentpage.html", "studentpage.css");
+        });
+
+        document.getElementById("attendance-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            loadContent("attendance.html", "attendance.css");
+        });
+
+        document.getElementById("add-news-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            loadContent("add-news.html", "add-news.css");
+        });
+
+        document.getElementById("upload-mess-bill-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            loadContent("upload-mess-bill.html", "upload-mess-bill.css");
+        });
+
+        document.getElementById("performance-appraisal-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            loadContent("performance-appraisal.html", "performance-appraisal.css");
+        });
+
+        function loadContent(htmlFile, cssFile) {
+            // Replace the CSS link with the new CSS file for the specific page
+            document.getElementById("css-link").setAttribute("href", cssFile);
+
+            // Fetch and replace the content of the "content" div with the new HTML
+            fetch(htmlFile)
+                .then(response => response.text())
+                .then(htmlContent => {
+                    document.getElementById("content").innerHTML = htmlContent;
+                });
+        }
+    </script>
+</body>
+</html>

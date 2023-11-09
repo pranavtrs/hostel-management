@@ -1,0 +1,141 @@
+/* Style the container */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Style the main content */
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* Style the student profile section */
+  .student-profile {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .profile-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .profile-details {
+    flex: 2;
+  }
+  
+  .profile-details h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .profile-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profile-details li {
+    margin-bottom: 10px;
+  }
+  
+  .profile-details li strong {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Style the mess fee details section */
+  .mess-fee-details {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .mess-fee-details h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .mess-fee-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .mess-fee-info span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Style the attendance details section */
+  .attendance-details {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .attendance-details h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .attendance-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .attendance-info span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Style the notice board section */
+  .notice-board {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .notice-board h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .notices {
+    list-style-type: none;
+    padding:0px;
+  }
